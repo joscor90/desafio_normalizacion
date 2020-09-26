@@ -24,4 +24,4 @@ CREATE TABLE autores(id INT, nombre VARCHAR(50) NOT NULL, PRIMARY KEY (id));
 
 -- Creación de la tabla "autores_libros"
 
-CREATE TABLE autores_libros(id INT, autores_id INT, libros_id INT, PRIMARY KEY (id), FOREIGN KEY (autores_id) REFERENCES autores(id), FOREIGN KEY (libros_id) REFERENCES libros(id));
+CREATE TABLE autores_libros(id INT, autores_id INT, libros_id INT, PRIMARY KEY (id), FOREIGN KEY (autores_id) REFERENCES autores(id), FOREIGN KEY (libros_id) REFERENCES libros(codigo_libro));
